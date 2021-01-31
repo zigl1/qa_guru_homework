@@ -1,7 +1,6 @@
 package test;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -18,10 +17,7 @@ public class TextBoxTest {
         Configuration.startMaximized = true;
 
     }
-    @AfterAll
-    static void afterAll() {
-        Configuration.timeout = 6000;
-    }
+   
 
     @Test
     void dataAppearsInOutputBlockTest() {
