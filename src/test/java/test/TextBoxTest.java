@@ -45,7 +45,6 @@ public class TextBoxTest {
     $("#city").click();
     $(By.xpath("//div[contains(text(),'Jaipur')]")).click();
     $("#submit").click();
-    
     $(".modal-content").shouldHave(text("Thanks for submmitting the form"),
                                    text("Ilgiz Student"),
                                    text("student@gmail.com"),
