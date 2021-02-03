@@ -45,10 +45,16 @@ public class TextBoxTest {
     $("#city").click();
     $(By.xpath("//div[contains(text(),'Jaipur')]")).click();
     $("#submit").click();
-    $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-    $(By.xpath("//tbody/tr[1]/td[2]")).shouldHave(text(name),text("Student"));
-    $("#closeLargeModal").shouldHave(text("Close")).click();
-
+    
+    $(".modal-content").shouldHave(text("Thanks for submmitting the form"),
+                                   text("Ilgiz Student"),
+                                   text("student@gmail.com"),
+                                   text("Male"),
+                                   text("1234567890"),
+                                   text("25 Febrary,1995"),
+                                   text("Computer Science"));
+                                   
+                                   
     }
 
 }
