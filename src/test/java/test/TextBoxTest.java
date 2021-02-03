@@ -56,7 +56,6 @@ public class TextBoxTest {
                 text("screenshot.test.png"),
                 text("12356 Haha"),
                 text("Rajasthan Jaipur"));
-
     }
 
 }
