@@ -29,6 +29,7 @@ public class TextBoxTest {
     $("#userEmail").setValue("student@gmail.com");
     $("label[for='gender-radio-1']").click();
     $("#userNumber").setValue("1234567890");
+    //DateOfBirth
     $("#dateOfBirthInput").click();
     $(".react-datepicker__year-select").click();
     $("option[value='1995']").click();
@@ -48,9 +49,6 @@ public class TextBoxTest {
     $(By.xpath("//tbody/tr[1]/td[2]")).shouldHave(text(name),text("Student"));
     $("#closeLargeModal").shouldHave(text("Close")).click();
 
-
-
     }
-
 
 }
