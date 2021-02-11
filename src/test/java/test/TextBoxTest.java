@@ -12,8 +12,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TextBoxTest extends TestBase {
-
+public class TextBoxTest{
     @BeforeAll
     static void setup() {
         Configuration.startMaximized = true;
